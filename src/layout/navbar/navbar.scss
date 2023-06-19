@@ -1,0 +1,110 @@
+.navbar {
+  height: 100%;
+  padding: 0 50px;
+
+  @media (max-width: 530px) {
+    padding: 0 10px;
+  }
+
+  &-searchBar {
+    position: relative;
+    > input {
+      width: 417px;
+      padding: 14px 14px 14px 55px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      outline: none;
+      border: none;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 14px;
+      color: #787486;
+    }
+    > .icon {
+      position: absolute;
+      top: 10px;
+      left: 16px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    .navbar-searchBar {
+      > input {
+        width: 220px;
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    .navbar-searchBar {
+      display: none;
+    }
+  }
+
+  &-right {
+    @media (max-width: 530px) {
+      width: 100%;
+    }
+  }
+
+  &-icons {
+    width: 120px;
+    margin-right: 54px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 925px) {
+    .navbar-icons {
+      display: none;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .navbar-icons {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .navbar-icons {
+      margin-right: 15px;
+    }
+  }
+
+  &-userProfile {
+    .userAvatar {
+      height: 38px;
+      width: 38px;
+      margin-right: 12.5px;
+      cursor: pointer;
+    }
+
+    .downArrowIcon {
+      width: 13px;
+      height: 6px;
+      cursor: pointer;
+    }
+
+    .userData {
+      margin-right: 18px;
+
+      .userName {
+        //   font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        text-align: right;
+        color: #0d062d;
+      }
+
+      .userAddress {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: right;
+        color: #787486;
+      }
+    }
+  }
+}

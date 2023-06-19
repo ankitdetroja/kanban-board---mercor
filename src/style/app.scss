@@ -1,0 +1,40 @@
+@import "../style/mixins";
+
+.App {
+  .layout-wrapper {
+    position: relative;
+    flex-wrap: nowrap;
+    .sidebar-wrapper {
+      flex-basis: 14.5%;
+      min-width: 225px;
+      min-height: 100vh;
+      border-right: 1px solid #dbdbdb;
+      background-color: white;
+      z-index: 10;
+    }
+
+    .main-wrapper {
+      min-height: 100vh;
+      flex-basis: 85.5%;
+
+      @include breakpoint-down(medium) {
+        flex-basis: 100%;
+      }
+
+      .navbar-wrapper {
+        height: 88px;
+        border-bottom: 1px solid #dbdbdb;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        z-index: 10;
+      }
+
+      .board-wrapper {
+        background-color: white;
+      }
+    }
+  }
+}

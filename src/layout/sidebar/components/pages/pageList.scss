@@ -1,0 +1,30 @@
+.page-list {
+  padding: 33px 0;
+  margin: 0 13px;
+  border-bottom: 1px solid #dbdbdb;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin: 0 11px;
+      padding: 14.125px 0;
+      cursor: pointer;
+
+      p {
+        margin-left: 15.25px;
+        color: #787486;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.board {
+  padding: 41px 48.5px;
+
+  @media (max-width: 530px) {
+    padding: 30px 10px;
+  }
+}

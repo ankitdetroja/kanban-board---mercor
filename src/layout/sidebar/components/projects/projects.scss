@@ -1,0 +1,16 @@
+.project {
+  .project-header {
+    margin: 30px 27px 22px 22px;
+    p {
+      color: #787486;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    & .icon {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
